@@ -62,7 +62,7 @@ echo color("red","# # # # # # # # # # # # # # # # # # # # # # # \n");
         echo "\n".color("yellow"," Ben Berkah...");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
-        sleep(5);
+        sleep(10);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PENGENGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
